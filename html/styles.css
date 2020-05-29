@@ -1,0 +1,92 @@
+.element{
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  align-self: center;
+  background-color: black;
+  text-align: center;
+  animation: blink 2s alternate infinite, rotate 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  100%{
+    background-color: blue;
+  }
+
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0.5;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+@keyframes rotate {
+  0%{
+    /* transform: rotate(0deg); */
+    transform: rotateY(0deg);
+
+  }
+  100%{
+    /* transform: rotate(360deg); */
+    transform: rotateY(180deg);
+
+
+  }
+
+}
+
+@keyframes border {
+  0%{
+      border-radius: 0%;
+  }
+  100%{
+      border-radius: 100%;
+  }
+
+}
+
+h1{
+  color: white;
+  align-self: center;
+}
+
+@keyframes jump {
+  0%,100%{
+    bottom: 0;
+  }
+  50%{
+    bottom:10px;
+  }
+
+}
+.animation2 {
+  height: 200px;
+  align-items: center;
+  text-align: center;
+}
+.a1{
+  display: inline-block;
+  position: relative;
+  font-size: 10rem;
+  animation: jump 1s  infinite;
+}
+.a2{
+  display: inline-block;
+  position: relative;
+  font-size: 10rem;
+  animation: jump 1s 0.5s  infinite;
+}
+.a3{
+  display: inline-block;
+  position: relative;
+  font-size: 10rem;
+  animation: jump 1s 1s  infinite;
+}
